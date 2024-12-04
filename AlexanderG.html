@@ -142,5 +142,59 @@
     <footer>
         <!-- Comments: Footer with placeholder for accessibilty-->
     </footer>
+   <h2>Contact Me</h2>
+    <form action="#" method="post">
+        <label>
+            Name:
+            <input type="text" name="first-name" placeholder="Name">
+        </label>
+        <br>
+        <label>
+            Email:
+            <input type="text" name="email" placeholder="Email" required>
+        </label>
+        <br>
+        <label>
+            Phone Number:
+            <input type="text" name="phone-number" placeholder="Phone Number" required>
+        </label>
+        <br>
+        <label>
+            Organization:
+            <input type="text" name="organization" placeholder="Organization" required>
+        </label>
+        <br>
+        <label>
+            Role:
+            <input text="text" name="role" placeholder="Role" required>
+        </label>
+        <br>
+        <label>
+            Reason For Contact:
+         <select>
+            <option></option>
+            <option>Job Offers</option>
+            <option>Collaboration</option>
+            <option>Feedback</option>
+         </select>
+        </label>
+        <br>
+        <!--Created a form and added: multiple different elements to collect info, and used select elements to create a dropdown menu and better display info. Added h2 tag to visually improve this section of CV. Added labels for screen readibility. Added action and method attributes to indicate that the form is being sent to a java server.-->
+         <label>    
+        Preferred Contact Method:<br>
+                <input type="radio" name="contactMethod" value="call"> Call<br>
+                <input type="radio" name="contactMethod" value="text"> Text<br>
+                <input type="radio" name="contactMethod" value="email"> Email
+         </label>
+        <br>
+         <label>
+            Comments:<br>
+            <textarea name="comments" placeholder="Comments"></textarea>
+         </label>
+        <br>
+        <!--Created multi choice option using radio attributes and input elements to allow job seeker to select their prefered contact method.  Addded input and type attribute to allow section for a message. Added placeholders throught input elements to make CV easier to navigate and read.-->
+        <input type="reset"><input type="submit" value="Submit">
+    </form>
+    <!--Added breaks throughput form to better organize text. Added clear and submit buttons using button and input elements. Used GPT to ensure html is properly marked up.-->
 </body>
 </html>
